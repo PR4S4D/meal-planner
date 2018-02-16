@@ -12,8 +12,8 @@ const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window
 console.log(store.getState())
 
 ReactDOM.render(
-  <Provider>
-    <App store={store} />
+  <Provider store={store}>
+    <App />
   </Provider>,
 	document.getElementById('root')
 )
