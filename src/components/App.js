@@ -65,7 +65,7 @@ class App extends Component {
 
         e.preventDefault()
 
-        this.setState(() => ({loading: true}))
+        this.setState(() => ({loadingFood: true}))
 
         fetchRecipes(this.input.value).then(
             (food) => this.setState(() => ({
